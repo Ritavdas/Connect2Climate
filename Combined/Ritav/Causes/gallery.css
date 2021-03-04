@@ -1,0 +1,32 @@
+.carousel-item {
+  height: 32rem;
+  background: #777;
+  color: rgb(0, 0, 0);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.overlay-image {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0.5;
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 50px;
+}
+
+p,
+h5 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans";
+}

@@ -1,0 +1,376 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+h1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-bottom: 60px;
+  color: #1abc9c;
+  font-size: 500%;
+  text-align: flex;
+  font-style: italic;
+  text-shadow: 2px 2px 2px #cccccc;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background: rgb(29, 28, 28);
+}
+nav {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: black;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  margin-bottom: 60px;
+}
+nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+nav .animation {
+  position: absolute;
+  height: 100%;
+  /* height: 5px; */
+  top: 0;
+  /* bottom: 0; */
+  z-index: 0;
+  background: #1abc9c;
+  border-radius: 8px;
+  transition: all 0.5s ease 0s;
+}
+nav a:nth-child(1) {
+  width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+nav a:nth-child(2) {
+  width: 110px;
+}
+nav a:nth-child(2):hover ~ .animation {
+  width: 110px;
+  left: 100px;
+}
+nav a:nth-child(3) {
+  width: 100px;
+}
+nav a:nth-child(3):hover ~ .animation {
+  width: 100px;
+  left: 210px;
+}
+
+nav a:nth-child(4) {
+  width: 120px;
+}
+nav a:nth-child(4):hover ~ .animation {
+  width: 120px;
+  left: 310px;
+}
+nav a:nth-child(5) {
+  width: 80px;
+}
+nav a:nth-child(5):hover ~ .animation {
+  width: 100px;
+  left: 420px;
+}
+nav a:nth-child(6) {
+  width: 120px;
+}
+nav a:nth-child(6):hover ~ .animation {
+  width: 100px;
+  left: 520px;
+}
+nav a:nth-child(7) {
+  width: 120px;
+}
+nav a:nth-child(7):hover ~ .animation {
+  width: 120px;
+  left: 630px;
+}
+nav a:nth-child(8) {
+  width: 120px;
+}
+nav a:nth-child(8):hover ~ .animation {
+  width: 120px;
+  left: 750px;
+}
+nav a:nth-child(9) {
+  width: 120px;
+}
+nav a:nth-child(9):hover ~ .animation {
+  width: 120px;
+  left: 870px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #33383b;
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.text {
+  margin-top: 40px;
+  padding: 10px;
+  font-family: Faustina;
+  position: relative;
+  width: 40%;
+}
+
+.text h1 {
+  color: #1abc9c;
+  font-size: 60px;
+  line-height: 1.3em;
+}
+
+.text p {
+  color: whitesmoke;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+.text input {
+  margin-top: 30px;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  background-color: #eff1f1;
+  cursor: pointer;
+}
+
+.button {
+  width: 200px;
+  border-radius: 50px;
+  padding: 15px;
+  padding-bottom: center;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 30px;
+  bottom: 30px solid #1abc9c;
+  background-image: linear-gradient(30deg, #1abc9c 50%, transparent 50%);
+  background-size: 500px;
+  cursor: pointer;
+  transition: background 300ms ease-in-out;
+}
+
+.button:hover {
+  background-position: 100%;
+  color: #1abc9c;
+}
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+/* The footer is fixed to the bottom of the page */
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer-distributed {
+  background-color: black;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Cookie", cursive;
+  margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img {
+  width: 30%;
+}
+
+.footer-distributed h3 span {
+  color: #1abc9c;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+.footer-distributed .footer-icons a:hover {
+  background-color: #1abc9c;
+}
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}

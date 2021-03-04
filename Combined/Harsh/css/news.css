@@ -1,0 +1,184 @@
+.mainlogo{
+
+	height: 150px;
+    margin-top: -40px;
+
+}
+
+
+.leftpane{
+
+	width: 75%;
+    height: auto;
+   
+    
+
+
+
+}
+
+
+.navbari a{
+	color: white;
+    text-decoration: none;
+}
+
+
+.rightpane{
+
+
+	width: 25%;
+    height: auto;
+    background-color: rgb(29, 28, 28);
+
+}
+
+
+.firstblock{
+	display: flex;
+}
+
+
+
+.leftpane-first{
+	display: flex;
+}
+
+
+.pagi{
+
+	width: 100%;
+    height: 50px;
+    background-color: rgb(29, 28, 28);
+    
+
+}
+
+
+.page-link{
+	background-color: black;
+	font-weight: bolder;
+
+}
+
+
+.pagi a{
+	color: white;
+
+}
+
+.fa2{
+	font-size: 20px;
+	padding: 10px;
+}
+
+.footer-icons a{
+	color: white;
+	
+	
+}
+
+
+
+
+
+
+
+
+.ul-rightpane li {
+  transition: 0.3s;
+
+}
+
+
+li:hover {
+  background-color: black;
+  font-size: 110%;
+  color: #41becc;
+  cursor:pointer;
+
+}
+
+.lis{
+	
+	font-weight: bolder;
+	color: white;
+	padding: 10px;
+	
+}   
+
+
+.rightpane input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 15px;
+  font-size: 17px;
+  margin-left: 20px;
+  background: black;
+  color: white;
+  border-radius: 0px;
+}
+
+
+.fa-search{
+	margin-top: 15px;
+
+}
+
+.weather-s{
+	margin-top: 30px;
+    width: 200px;
+    margin-left: 20px;
+}
+
+
+.leftpane-first img {
+  transition: 0.8s;
+
+}
+
+.leftpane-first img:hover {
+
+  cursor:pointer;
+  filter:brightness(70%); 
+  transform: scale(1.1);
+}
+
+
+.s-b-t{
+
+    
+    height: 40px;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 26px;
+    position: relative;
+    left: 800px;
+}
+
+
+.s-b-t i{
+  margin-left: 5px;
+}
+
+.s-b-t input{
+    border-radius: 5px;
+    height: 30px;
+    background-color: white;
+    
+}
+
+.leftpane-first p{
+
+  transition: 0.3s;
+
+}
+
+
+.leftpane-first p:hover{
+  transform: scale(1.1);
+  color: #41becc;
+  cursor: pointer;
+}

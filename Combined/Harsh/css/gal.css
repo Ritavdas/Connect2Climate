@@ -1,0 +1,31 @@
+.gal-imgs img{
+	transition: transform .2s;
+	
+}
+
+.gal-imgs img:hover {
+  transform: scale(1.2); 
+  filter: brightness(110%);
+
+}
+
+
+
+
+
+
+.gal-imgs{
+	position: relative;
+	bottom: 200px;
+}
+
+
+.gal-row-2 img{
+	width: 500px;
+
+}
+
+.gal-row-3 img{
+	width: 800px;
+
+}

@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url("https://fonts.googleapis.com/css?family=Anton");
+
+.rainbow {
+  /* Font options */
+
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 40px;
+  font-family: helvetica;
+
+  /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 1s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow {
+  0% {
+    color: orange;
+  }
+  10% {
+    color: red;
+  }
+  20% {
+    color: black;
+  }
+}
+
+#btext {
+  width: 200px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  margin: auto 0;
+}
+
+.breaking-news-section {
+  padding: 0 30px 0 60px;
+  display: flex;
+  background-color: black;
+  height: 50px;
+}
+
+.breaking-news {
+  padding: 10px;
+  color: white;
+  font-weight: 800;
+  display: inline-block;
+}
+
+.bntime {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.breaking-news:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+/*--------------------------FEATURED, LATEST, OUR PICKS SECTION------------------------------------------------*/
+
+#popular-news {
+  display: flex;
+
+  background-color: green;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+#popular-news img {
+  filter: brightness(0.5);
+}
+
+#featured {
+  height: 500px;
+  width: 100%;
+  background-color: blue;
+}
+
+#featured img {
+  height: 100%;
+  width: 100%;
+}
+
+#popular-news h2 {
+  margin: 0;
+  padding: 5px;
+  color: white;
+}
+
+/* TOP H2 TAG CSS */
+#featured h2 {
+  background-color: darkred;
+}
+
+#latest h2 {
+  background-color: darkblue;
+}
+
+#our-picks h2 {
+  background-color: darkgreen;
+}
+
+.carousel,
+.news-container {
+  position: relative;
+}
+
+.popular-news-text {
+  font-size: 14px;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  bottom: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 0 10px;
+}
+
+#featured {
+  flex: 2;
+}
+
+#latest,
+#our-picks {
+  flex: 1;
+}
+
+.card h3 {
+  transition: 0.3s;
+}
+
+h3:hover {
+  color: #41becc;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.para {
+  display: flex;
+  margin: auto;
+  width: 97%;
+}
+
+.para-left {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(29, 28, 28);
+}
+
+.para-right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(29, 28, 28);
+  position: relative;
+  top: 200px;
+}
