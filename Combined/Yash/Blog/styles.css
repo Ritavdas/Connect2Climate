@@ -444,3 +444,8 @@ footer {
     margin-left: 0;
   }
 }
+
+h2,
+h3 {
+  color: aqua;
+}
