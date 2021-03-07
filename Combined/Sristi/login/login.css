@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   overflow: hidden;
-  background-image: url("background.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 200px;
+  background-color: #000000fa;
   font-family: "Roboto", sans-serif;
 }
 body .container {
@@ -39,7 +37,7 @@ body .container .form .login .footer .btn {
   opacity: 0.7;
   font-weight: bold;
   border-radius: 10px;
-  border: 2px solid #86d6d8;
+  border: 2px solid #1abc9c;
   color: #2f4f4f;
   transition: all 0.5s;
   font-size: 15px;
@@ -48,12 +46,12 @@ body .container .form .login .footer .btn:hover {
   top: 78%;
   font-size: 16.5px;
   width: 150px;
-  border: 2px solid #20c3d0;
+  border: 2px solid #1abc9c;
 }
 
 body .container .form .login .body-content .usr {
   background: transparent;
-  border-bottom: 2px solid #86d6d8;
+  border-bottom: 2px solid #1abc9c;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -62,11 +60,11 @@ body .container .form .login .body-content .usr {
 }
 body .container .form .login .body-content .usr:hover {
   width: 200px;
-  border-bottom: 2px solid #20c3d0;
+  border-bottom: 2px solid #1abc9c;
 }
 body .container .form .login .body-content .psw {
   background: transparent;
-  border-bottom: 2px solid #86d6d8;
+  border-bottom: 2px solid #1abc9c;
   position: absolute;
   top: 55%;
   left: 50%;
@@ -74,7 +72,7 @@ body .container .form .login .body-content .psw {
 }
 body .container .form .login .body-content .psw:hover {
   width: 200px;
-  border-bottom: 2px solid #20c3d0;
+  border-bottom: 2px solid #1abc9c;
 }
 body .container .form .login .body-content input {
   color: #2f4f4f;
@@ -94,11 +92,11 @@ body .container .form .login span.title {
   width: 40%;
   padding: 15px;
   font-size: 20px;
-  background: -webkit-linear-gradient(#3fd0d4, #20c3d0);
+  background: -webkit-linear-gradient(#1abc9c, #1abc9c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 3px solid;
-  border-image: radial-gradient(#fffafa, #20c3d0, #fffafa) 1;
+  border-image: radial-gradient(#fffafa, #1abc9c, #fffafa) 1;
 }
 body .container .form .box1 {
   height: 100px;

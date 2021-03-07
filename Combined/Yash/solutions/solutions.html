@@ -5,83 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions</title>
     <style>
-        body {
-            font-family: Arial;
-            padding: 20px;
-            background: black;
-          }
-          
-          /* Header/Blog Title */
-          .header {
-            padding: 30px;
-            font-size: 20px;
-            text-align: center;
-            background:transparent;
-          }
-          img {
-            border: 5px solid #555;
-          }
-          
-          /* Create two unequal columns that floats next to each other */
-          /* Left column */
-          .leftcolumn {
-            float: left;
-            width: 100%;
-            background-color: black;
-          }
-          .img{
-            border-radius: 10px;
-          }
-         
-          
-          /* Fake image */
-          .fakeimg {
-            background-color:black;
-            width: 200px;
-            height: 200px;
-          }
-          .fakeimg img{
-            transition: 0.3s;
-          }
-  
-          .fakeimg img:hover{
-            transform: scale(1.1);
-            filter: brightness(110%);
-          }
-          
-          /* Add a card effect for articles */
-          .card {
-            background-color:white;
-            padding: 20px;
-            margin-top: 20px;
-            
-          }
-          .h2{
-            color: white;
-          }
-          
-          /* Clear floats after the columns */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          
-          /* Footer */
-          .footer {
-            padding: 20px;
-            text-align: center;
-            background: #ddd;
-            margin-top: 20px;
-          }
-          
-          /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 800px) {
-            .leftcolumn, .rightcolumn {
-              width: 100%;
-              padding: 0;
-            }
-          }
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: black;
+      }
+
+      /* Header/Blog Title */
+      .header {
+        padding: 30px;
+        font-size: 20px;
+        text-align: center;
+        background: transparent;
+      }
+      img {
+        border: 5px solid #555;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      /* Left column */
+      .leftcolumn {
+        float: left;
+        width: 100%;
+        background-color: black;
+      }
+      .img {
+        border-radius: 10px;
+      }
+
+      /* Fake image */
+      .fakeimg {
+        background-color: black;
+        width: 200px;
+        height: 200px;
+      }
+      .fakeimg img {
+        transition: 0.3s;
+      }
+
+      .fakeimg img:hover {
+        transform: scale(1.1);
+        filter: brightness(110%);
+      }
+
+      /* Add a card effect for articles */
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .h2 {
+        color: white;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
     </style>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link
@@ -110,182 +109,254 @@
     <nav>
       <a href="../../Harsh/home.html" target="blank">Home</a>
       <a href="blog.html" target="blank">Blog</a>
-      <a href="../../Sristi/donation/donation.html" target="blank">Donation</a>
-      <a href="../../Sristi/FAQs/index.html" target="blank">FAQ</a>
       <a href="../../Harsh/news.html" target="blank">News</a>
       <a href="../../Ritav/Causes/causes.html" target="blank">Causes</a>
       <a href="../../Ritav/effects/effects.html" target="blank">Effects</a>
       <a href="../../Harsh/gal.html" target="blank">Gallery</a>
       <a href="solutions.html">Solutions</a>
+      <a href="../../Sristi/FAQs/index.html" target="blank">FAQ</a>
+      <a href="../../Sristi/donation/donation.html" target="blank">Donation</a>
 
       <div class="animation start-home" />
     </nav>
     <h1>Solutions For Climate Changes</h1>
     <div class="header">
-      <p style="color: white;">
-        Climate change is caused by factors that include oceanic processes (such as oceanic circulation), biotic processes (e.g., plants), 
-        variations in solar radiation received by Earth, plate tectonics and volcanic eruptions, and human-induced alterations of the natural 
-        world. The latter effect is currently causing global warming, and "climate change" is often used to describe human-specific impacts.
+      <p style="color: white">
+        Climate change is caused by factors that include oceanic processes (such
+        as oceanic circulation), biotic processes (e.g., plants), variations in
+        solar radiation received by Earth, plate tectonics and volcanic
+        eruptions, and human-induced alterations of the natural world. The
+        latter effect is currently causing global warming, and "climate change"
+        is often used to describe human-specific impacts.
       </p>
-      </div>
-      
-      <div class="row">
-        <div class="leftcolumn" style="color: black;">
-          <div class="card" style="background-color: black;">
-            <h2 style="color: white;">1. Forego Fossil Fuels</h2><br>
-            
-            <div class="fakeimg" style="height:100px;">
-              <img src="2.jpg" alt="earth" style="width: 300px;" height="200px">
-            </div><br><br><br><br><br>
-            <p style="color:white">The first challenge is eliminating the burning of coal, oil and, eventually, natural gas. This is perhaps the most daunting 
-              challenge as denizens of richer nations literally eat, wear, work, play and even sleep on the products made from such fossilized 
-              sunshine. And citizens of developing nations want and arguably deserve the same comforts, which are largely thanks to the energy 
-              stored in such fuels.<br>
-              Oil is the lubricant of the global economy, hidden inside such ubiquitous items as plastic and corn, and fundamental to the 
-              transportation of both consumers and goods. Coal is the substrate, supplying roughly half of the electricity used in the U.S. 
-              and nearly that much worldwide—a percentage that is likely to grow, according to the International Energy Agency. There are no
-               perfect solutions for reducing dependence on fossil fuels (for example, carbon neutral biofuels can drive up the price of food 
-               and lead to forest destruction, and while nuclear power does not emit greenhouse gases, it does produce radioactive waste), but
-                every bit counts.<br>
-                So try to employ alternatives when possible—plant-derived plastics, biodiesel, wind power—and to invest in the change, be it 
-                by divesting from oil stocks or investing in companies practicing carbon capture and storage.
-            </p>
-          </div>
-          <div class="card" style="background-color: teal;">
-            <h2 style="color: white;">2. Infrastructure Upgrade</h2><br>
-            
-            <div class="fakeimg" style="height:200px;">
-              <img src="3.jpg" alt="future" style="width: 300px;" height="200px">
-            </div><br>
-            <p style="color: white;">
-              Buildings worldwide contribute around one third of all greenhouse gas emissions (43 percent in the U.S. alone), even though 
-              investing in thicker insulation and other cost-effective, temperature-regulating steps can save money in the long run. Electric 
-              grids are at capacity or overloaded, but power demands continue to rise. And bad roads can lower the fuel economy of even the most 
-              efficient vehicle. Investing in new infrastructure, or radically upgrading existing highways and transmission lines, would help cut 
-              greenhouse gas emissions and drive economic growth in developing countries.<br>
-              Of course, it takes a lot of cement, a major source of greenhouse gas emissions, to construct new buildings and roads. The U.S. 
-              alone contributed 50.7 million metric tons of carbon dioxide to the atmosphere in 2005 from cement production, which requires 
-              heating limestone and other ingredients to 1,450 degrees Celsius (2,642 degrees Fahrenheit). Mining copper and other elements 
-              needed for electrical wiring and transmission also causes globe-warming pollution.<br>
-              But energy-efficient buildings and improved cement-making processes (such as using alternative fuels to fire up the kiln) 
-              could reduce greenhouse gas emissions in the developed world and prevent them in the developing world.
-            </p>
-          </div>
-          <div class="card" style="background-color: thistle;">
-            <h2 style="color: white;">3. Stop Cutting Down Trees</h2><br>
-            
-            <div class="fakeimg" style="height:200px;">
-              <img src="4.jpg" alt="stop cutting the trees" style="width: 300px;" height="200px">
-            </div><br>
-            <p style="color: white;">
-              Every year, 33 million acres of forests are cut down. Timber harvesting in the tropics alone contributes 1.5 billion metric tons 
-              of carbon to the atmosphere. That represents 20 percent of human-made greenhouse gas emissions and a source that could be avoided
-               relatively easily.<br>
-               Improved agricultural practices along with paper recycling and forest management—balancing the amount of wood taken out with 
-               the amount of new trees growing—could quickly eliminate this significant chunk of emissions.<br>
-               And when purchasing wood products, such as furniture or flooring, buy used goods or, failing that, wood certified to have been 
-               sustainably harvested. The Amazon and other forests are not just the lungs of the earth, they may also be humanity's best 
-               short-term hope for limiting climate change.<br>
-            </p>
-          </div>
-          <div class="card" style="background-color: turquoise;">
-            <h2 style="color: white;">4. Future Fuels</h2><br>
-          
-            <div class="fakeimg" style="height:200px;">
-              <img src="5.jpg" alt="future fuel" style="width: 300px;" height="200px">
-            </div><br>
-            <p style="color: white;">
-              Replacing fossil fuels may prove the great challenge of the 21st century. Many contenders exist, ranging from ethanol derived 
-              from crops to hydrogen electrolyzed out of water, but all of them have some drawbacks, too, and none are immediately available 
-              at the scale needed.<br>
-              Biofuels can have a host of negative impacts, from driving up food prices to sucking up more energy than they produce. Hydrogen 
-              must be created, requiring either reforming natural gas or electricity to crack water molecules. Biodiesel hybrid electric 
-              vehicles (that can plug into the grid overnight) may offer the best transportation solution in the short term, given the energy 
-              density of diesel and the carbon neutral ramifications of fuel from plants as well as the emissions of electric engines. A recent 
-              study found that the present amount of electricity generation in the U.S. could provide enough energy for the country's entire fleet 
-              of automobiles to switch to plug-in hybrids, reducing greenhouse gas emissions in the process.<br>
-              But plug-in hybrids would still rely on electricity, now predominantly generated by burning dirty coal. Massive investment in
-               low-emission energy generation, whether solar-thermal power or nuclear fission, would be required to radically reduce greenhouse
-                gas emissions. And even more speculative energy sources—hyperefficient photovoltaic cells, solar energy stations in orbit or 
-                even fusion—may ultimately be required.<br>
-            </p>
-          </div>
-          <div class="card" style="background-color: tomato;">
-            <h2 style="color: white;">5. Eat Smart, Go Vegetarian?</h2><br>
-            
-            <div class="fakeimg" style="height:200px;">
-              <img src="6.jpg" alt="are you a vegeterian" style="width: 300px;" height="200px">
-            </div><br>
-            <p style="color: white;">
-              Corn grown in the U.S. requires barrels of oil for the fertilizer to grow it and the diesel fuel to harvest and transport it. 
-              Some grocery stores stock organic produce that do not require such fertilizers, but it is often shipped from halfway across the
-               globe. And meat, whether beef, chicken or pork, requires pounds of feed to produce a pound of protein.<br>
-               Choosing food items that balance nutrition, taste and ecological impact is no easy task. Foodstuffs often bear some nutritional 
-               information, but there is little to reveal how far a head of lettuce, for example, has traveled.<br>
-               University of Chicago researchers estimate that each meat-eating American produces 1.5 tons more greenhouse gases through 
-               their food choice than do their vegetarian peers. It would also take far less land to grow the crops necessary to feed humans
-                than livestock, allowing more room for planting trees.<br><br>
-            </p>
-          </div>
-        </div>
-      
-      
-    
-    <footer class="footer-distributed">
-      <div class="footer-left">
-        <h3>Connect2<span>Climate</span></h3>
+    </div>
 
-        <p class="footer-links">
-          <a href="#">Home</a>
-          |
-          <a href="#">Blog</a>
-          |
-          <a href="#">About</a>
-          |
-          <a href="#">Contact</a>
-        </p>
+    <div class="row">
+      <div class="leftcolumn" style="color: black">
+        <div class="card" style="background-color: black">
+          <h2 style="color: white">1. Forego Fossil Fuels</h2>
+          <br />
 
-        <p class="footer-company-name">© 2021 Connect2Climate Pvt. Ltd.</p>
-      </div>
-
-      <div class="footer-center">
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p>
-            <span>309 - Rupa Solitaire, Bldg. No. A - 1, Sector - 1</span>
-            Mahape, Navi Mumbai - 400710
+          <div class="fakeimg" style="height: 100px">
+            <img src="2.jpg" alt="earth" style="width: 300px" height="200px" />
+          </div>
+          <br /><br /><br /><br /><br />
+          <p style="color: white">
+            The first challenge is eliminating the burning of coal, oil and,
+            eventually, natural gas. This is perhaps the most daunting challenge
+            as denizens of richer nations literally eat, wear, work, play and
+            even sleep on the products made from such fossilized sunshine. And
+            citizens of developing nations want and arguably deserve the same
+            comforts, which are largely thanks to the energy stored in such
+            fuels.<br />
+            Oil is the lubricant of the global economy, hidden inside such
+            ubiquitous items as plastic and corn, and fundamental to the
+            transportation of both consumers and goods. Coal is the substrate,
+            supplying roughly half of the electricity used in the U.S. and
+            nearly that much worldwide—a percentage that is likely to grow,
+            according to the International Energy Agency. There are no perfect
+            solutions for reducing dependence on fossil fuels (for example,
+            carbon neutral biofuels can drive up the price of food and lead to
+            forest destruction, and while nuclear power does not emit greenhouse
+            gases, it does produce radioactive waste), but every bit counts.<br />
+            So try to employ alternatives when possible—plant-derived plastics,
+            biodiesel, wind power—and to invest in the change, be it by
+            divesting from oil stocks or investing in companies practicing
+            carbon capture and storage.
           </p>
         </div>
+        <div class="card" style="background-color: teal">
+          <h2 style="color: white">2. Infrastructure Upgrade</h2>
+          <br />
 
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+91 22-27782183</p>
+          <div class="fakeimg" style="height: 200px">
+            <img src="3.jpg" alt="future" style="width: 300px" height="200px" />
+          </div>
+          <br />
+          <p style="color: white">
+            Buildings worldwide contribute around one third of all greenhouse
+            gas emissions (43 percent in the U.S. alone), even though investing
+            in thicker insulation and other cost-effective,
+            temperature-regulating steps can save money in the long run.
+            Electric grids are at capacity or overloaded, but power demands
+            continue to rise. And bad roads can lower the fuel economy of even
+            the most efficient vehicle. Investing in new infrastructure, or
+            radically upgrading existing highways and transmission lines, would
+            help cut greenhouse gas emissions and drive economic growth in
+            developing countries.<br />
+            Of course, it takes a lot of cement, a major source of greenhouse
+            gas emissions, to construct new buildings and roads. The U.S. alone
+            contributed 50.7 million metric tons of carbon dioxide to the
+            atmosphere in 2005 from cement production, which requires heating
+            limestone and other ingredients to 1,450 degrees Celsius (2,642
+            degrees Fahrenheit). Mining copper and other elements needed for
+            electrical wiring and transmission also causes globe-warming
+            pollution.<br />
+            But energy-efficient buildings and improved cement-making processes
+            (such as using alternative fuels to fire up the kiln) could reduce
+            greenhouse gas emissions in the developed world and prevent them in
+            the developing world.
+          </p>
         </div>
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p>
-            <a href="mailto:support@connect2climate.com"
-              >support@connect2climate.com</a
-            >
+        <div class="card" style="background-color: thistle">
+          <h2 style="color: white">3. Stop Cutting Down Trees</h2>
+          <br />
+
+          <div class="fakeimg" style="height: 200px">
+            <img
+              src="4.jpg"
+              alt="stop cutting the trees"
+              style="width: 300px"
+              height="200px"
+            />
+          </div>
+          <br />
+          <p style="color: white">
+            Every year, 33 million acres of forests are cut down. Timber
+            harvesting in the tropics alone contributes 1.5 billion metric tons
+            of carbon to the atmosphere. That represents 20 percent of
+            human-made greenhouse gas emissions and a source that could be
+            avoided relatively easily.<br />
+            Improved agricultural practices along with paper recycling and
+            forest management—balancing the amount of wood taken out with the
+            amount of new trees growing—could quickly eliminate this significant
+            chunk of emissions.<br />
+            And when purchasing wood products, such as furniture or flooring,
+            buy used goods or, failing that, wood certified to have been
+            sustainably harvested. The Amazon and other forests are not just the
+            lungs of the earth, they may also be humanity's best short-term hope
+            for limiting climate change.<br />
+          </p>
+        </div>
+        <div class="card" style="background-color: turquoise">
+          <h2 style="color: white">4. Future Fuels</h2>
+          <br />
+
+          <div class="fakeimg" style="height: 200px">
+            <img
+              src="5.jpg"
+              alt="future fuel"
+              style="width: 300px"
+              height="200px"
+            />
+          </div>
+          <br />
+          <p style="color: white">
+            Replacing fossil fuels may prove the great challenge of the 21st
+            century. Many contenders exist, ranging from ethanol derived from
+            crops to hydrogen electrolyzed out of water, but all of them have
+            some drawbacks, too, and none are immediately available at the scale
+            needed.<br />
+            Biofuels can have a host of negative impacts, from driving up food
+            prices to sucking up more energy than they produce. Hydrogen must be
+            created, requiring either reforming natural gas or electricity to
+            crack water molecules. Biodiesel hybrid electric vehicles (that can
+            plug into the grid overnight) may offer the best transportation
+            solution in the short term, given the energy density of diesel and
+            the carbon neutral ramifications of fuel from plants as well as the
+            emissions of electric engines. A recent study found that the present
+            amount of electricity generation in the U.S. could provide enough
+            energy for the country's entire fleet of automobiles to switch to
+            plug-in hybrids, reducing greenhouse gas emissions in the
+            process.<br />
+            But plug-in hybrids would still rely on electricity, now
+            predominantly generated by burning dirty coal. Massive investment in
+            low-emission energy generation, whether solar-thermal power or
+            nuclear fission, would be required to radically reduce greenhouse
+            gas emissions. And even more speculative energy
+            sources—hyperefficient photovoltaic cells, solar energy stations in
+            orbit or even fusion—may ultimately be required.<br />
+          </p>
+        </div>
+        <div class="card" style="background-color: tomato">
+          <h2 style="color: white">5. Eat Smart, Go Vegetarian?</h2>
+          <br />
+
+          <div class="fakeimg" style="height: 200px">
+            <img
+              src="6.jpg"
+              alt="are you a vegeterian"
+              style="width: 300px"
+              height="200px"
+            />
+          </div>
+          <br />
+          <p style="color: white">
+            Corn grown in the U.S. requires barrels of oil for the fertilizer to
+            grow it and the diesel fuel to harvest and transport it. Some
+            grocery stores stock organic produce that do not require such
+            fertilizers, but it is often shipped from halfway across the globe.
+            And meat, whether beef, chicken or pork, requires pounds of feed to
+            produce a pound of protein.<br />
+            Choosing food items that balance nutrition, taste and ecological
+            impact is no easy task. Foodstuffs often bear some nutritional
+            information, but there is little to reveal how far a head of
+            lettuce, for example, has traveled.<br />
+            University of Chicago researchers estimate that each meat-eating
+            American produces 1.5 tons more greenhouse gases through their food
+            choice than do their vegetarian peers. It would also take far less
+            land to grow the crops necessary to feed humans than livestock,
+            allowing more room for planting trees.<br /><br />
           </p>
         </div>
       </div>
-      <div class="footer-right">
-        <p class="footer-company-about">
-          <span>About the company</span>
-          To help solve the climate crisis by organizing local business leaders
-          to be more effective advocates for climate action within their
-          businesses and communities, as well as at the state, national, and
-          even international levels.
-        </p>
-        <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-youtube"></i></a>
+
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>Connect2<span>Climate</span></h3>
+
+          <p class="footer-links">
+            <a href="#">Home</a>
+            |
+            <a href="#">Blog</a>
+            |
+            <a href="#">About</a>
+            |
+            <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">© 2021 Connect2Climate Pvt. Ltd.</p>
         </div>
-      </div>
-    </footer>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>
+              <span>309 - Rupa Solitaire, Bldg. No. A - 1, Sector - 1</span>
+              Mahape, Navi Mumbai - 400710
+            </p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 22-27782183</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@connect2climate.com"
+                >support@connect2climate.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-right">
+          <p class="footer-company-about" style="font-size: 17px">
+            <span>About the company</span>
+            To help solve the climate crisis by organizing local business
+            leaders to be more effective advocates for climate action within
+            their businesses and communities, as well as at the state, national,
+            and even international levels.
+          </p>
+          <div class="footer-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

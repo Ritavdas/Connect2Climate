@@ -1,146 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        
-        body {
-          font-family: Arial;
-          padding: 20px;
-          background:black;
-        }
-        
-        
-        .header {
-          padding: 30px;
-          font-size: 40px;
-          text-align: center;
-          background: white;
-        }
-        
-        
-        .leftcolumn {   
-          float: left;
-          width: 75%;
-          
-        }
-        
-        
-        .rightcolumn {
-          float: right;
-          width: 25%;
-          padding-left: 20px;
-        }
-        * {
-          box-sizing: border-box;
-        }
-        
-        .column {
-          float: left;
-          width: 33.33%;
-          padding: 5px;
-        }
-        
-        /* Clearfix (clear floats) */
-        .row::after {
-          content: "";
-          clear: both;
-          display: table;
-        }
-        
-        .fakeimg {
-          background-color:black;
-          width: 100%;
-          padding: 20px;
-          
-        }
-
-        .fakeimg img{
-          transition: 0.3s;
-        }
-
-        .fakeimg img:hover{
-          transform: scale(1.1);
-          filter: brightness(110%);
-        }
-        .a{
-          text-indent: 50px;
-          text-align: start;
-        }
-        
-        
-        .card {
-           background-color:black;
-           padding: 20px;
-           margin-top: 20px;
-           
-        }
-        .p{
-          text-align: justify;
-        }
-        
-        #toc_container {
-          background: #131212 none repeat scroll 0 0;
-          border: 1px solid #aaa;
-          display: table;
-          font-size: 95%;
-          margin-bottom: 1em;
-          padding: 20px;
-          width: auto;
-          border: inset;
+      * {
+        box-sizing: border-box;
       }
-      
+
+      body {
+        font-family: Arial;
+        padding: 20px;
+        background: black;
+      }
+
+      .header {
+        padding: 30px;
+        font-size: 40px;
+        text-align: center;
+        background: white;
+      }
+
+      .leftcolumn {
+        float: left;
+        width: 75%;
+      }
+
+      .rightcolumn {
+        float: right;
+        width: 25%;
+        padding-left: 20px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .fakeimg {
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .fakeimg img {
+        transition: 0.3s;
+      }
+
+      .fakeimg img:hover {
+        transform: scale(1.1);
+        filter: brightness(110%);
+      }
+      .a {
+        text-indent: 50px;
+        text-align: start;
+      }
+
+      .card {
+        background-color: black;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .p {
+        text-align: justify;
+      }
+
+      #toc_container {
+        background: #131212 none repeat scroll 0 0;
+        border: 1px solid #aaa;
+        display: table;
+        font-size: 95%;
+        margin-bottom: 1em;
+        padding: 20px;
+        width: auto;
+        border: inset;
+      }
+
       .toc_title {
-          font-weight: 700;
-          text-align: center;
+        font-weight: 700;
+        text-align: center;
       }
 
-      
-      #toc_container li, #toc_container ul, #toc_container ul li{
-          list-style: outside none none !important;
+      #toc_container li,
+      #toc_container ul,
+      #toc_container ul li {
+        list-style: outside none none !important;
       }
-        
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .fakeimg {
+        border: 5px solid #555;
+      }
+
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+          width: 100%;
+          padding: 0;
         }
-        .fakeimg {
-          border: 5px solid #555;
-        }
-        
-        
-        .footer {
-          padding: 20px;
-          text-align: center;
-          background: #ddd;
-          margin-top: 20px;
-        }
-        
-        
-        @media screen and (max-width: 800px) {
-          .leftcolumn, .rightcolumn {   
-            width: 100%;
-            padding: 0;
-          }
-        }
-        </style>
+      }
+    </style>
     <title>Blog</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <link
       href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
       re1="sty1esheet"
     />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="footer, address, phone, icons" />
@@ -156,368 +151,575 @@
       rel="stylesheet"
       type="text/css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <a href="../../Harsh/home.html" target="blank">Home</a>
       <a href="blog.html" target="blank">Blog</a>
-      <a href="../../Sristi/donation/donation.html" target="blank">Donation</a>
-      <a href="../../Sristi/FAQs/index.html" target="blank">FAQ</a>
       <a href="../../Harsh/news.html" target="blank">News</a>
       <a href="../../Ritav/Causes/causes.html" target="blank">Causes</a>
       <a href="../../Ritav/effects/effects.html" target="blank">Effects</a>
       <a href="../../Harsh/gal.html" target="blank">Gallery</a>
       <a href="../solutions/solutions.html">Solutions</a>
-  
-        <div class="animation start-home" />
-      </nav>
-      <h1>WEATHER BLOG</h1>
-      <div class="row">
-        <div class="leftcolumn">
-          <div class="card">
-            <h2 style="color: white;">DAILY REPORT</h2>
-            <h5 style="color: white;">IMAGES</h5>
-            <div class="fakeimg">  
-              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-            
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="3.jpg" alt="bad weather" style="height: 500px;" width="100%">
-                  </div>
-            
-                  <div class="item">
-                    <img src="lightening.jpg" alt="lightening strikes" style="height: 500px;" width="100%">
-                  </div>
-                
-                  <div class="item">
-                    <img src="bright.jpg" alt="Bright sunshine" style="height: 500px;" width="100%">
-                  </div>
+      <a href="../../Sristi/FAQs/index.html" target="blank">FAQ</a>
+      <a href="../../Sristi/donation/donation.html" target="blank">Donation</a>
+
+      <div class="animation start-home" />
+    </nav>
+    <h1>WEATHER BLOG</h1>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 style="color: white">DAILY REPORT</h2>
+          <h5 style="color: white">IMAGES</h5>
+          <div class="fakeimg">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img
+                    src="3.jpg"
+                    alt="bad weather"
+                    style="height: 500px"
+                    width="100%"
+                  />
                 </div>
-            
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+
+                <div class="item">
+                  <img
+                    src="lightening.jpg"
+                    alt="lightening strikes"
+                    style="height: 500px"
+                    width="100%"
+                  />
+                </div>
+
+                <div class="item">
+                  <img
+                    src="bright.jpg"
+                    alt="Bright sunshine"
+                    style="height: 500px"
+                    width="100%"
+                  />
+                </div>
               </div>
+
+              <!-- Left and right controls -->
+              <a
+                class="left carousel-control"
+                href="#myCarousel"
+                data-slide="prev"
+              >
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="right carousel-control"
+                href="#myCarousel"
+                data-slide="next"
+              >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <br>
-            <div id="toc_container">
-              <p class="toc_title" style="color: white;">Contents</p>
-              <ul class="toc_list">
-                <li><a href="#First_Point_Header">1 Average Temperature</a>
-              </li>
+          </div>
+          <br />
+          <div id="toc_container">
+            <p class="toc_title" style="color: white">Contents</p>
+            <ul class="toc_list">
+              <li><a href="#First_Point_Header">1 Average Temperature</a></li>
               <li><a href="#Second_Point_Header">2 Climater</a></li>
-              <li><a href="#Third_Point_Header">3 World Meteorological Organization(WMO)</a></li>
-              <li><a href="#Fourth_Point_Header">4 Classification Of Climate</a></li>
-              <li><a href="#Fifth_Point_Header">5 Cyclone Amphan-West Bengal</a></li>
+              <li>
+                <a href="#Third_Point_Header"
+                  >3 World Meteorological Organization(WMO)</a
+                >
+              </li>
+              <li>
+                <a href="#Fourth_Point_Header">4 Classification Of Climate</a>
+              </li>
+              <li>
+                <a href="#Fifth_Point_Header">5 Cyclone Amphan-West Bengal</a>
+              </li>
               <li><a href="#Sixth_Point_Header">6 Global Temperature</a></li>
-              <li><a href="#Seventh_Point_Header">7 Greenhouse</a>
+              <li>
+                <a href="#Seventh_Point_Header">7 Greenhouse</a>
                 <ul>
                   <div class="a">
-                    <li><a href="#Seventh_Sub_Point_1">7.1 Carbon Dioxide</a></li>
+                    <li>
+                      <a href="#Seventh_Sub_Point_1">7.1 Carbon Dioxide</a>
+                    </li>
                     <li><a href="#Seventh_Sub_Point_2">7.2 Methane</a></li>
-                    <li><a href="#Seventh_Sub_Point_3">7.3 Nitrous Oxide</a></li>
-                    <li><a href="#Seventh_Sub_Point_4">7.4 Fluorinated Gases</a></li>
+                    <li>
+                      <a href="#Seventh_Sub_Point_3">7.3 Nitrous Oxide</a>
+                    </li>
+                    <li>
+                      <a href="#Seventh_Sub_Point_4">7.4 Fluorinated Gases</a>
+                    </li>
                   </div>
-                  </ul>
+                </ul>
               </li>
-              </ul>
-              </div>
+            </ul>
+          </div>
 
-            <h2 id="First_Point_Header">Average Temperature</h2>
-            <p style="color: white;">Earth's average temperature has risen by 1.5°F over the past century, and is projected to rise another 0.5 to 8.6°F over the 
-                next hundred years.
-                Small changes in the average temperature of the planet can translate to large and potentially dangerous shifts in climate and 
-                weather.<br>
-                Geologists and paleontologists have found that, in the last 100 million years, global temperatures have peaked twice. 
-                One spike was the Cretaceous Hot Greenhouse roughly 92 million years ago, about 25 million years before Earth’s last dinosaurs 
-                went extinct. Widespread volcanic activity may have boosted atmospheric carbon dioxide. Temperatures were so high that 
-                champsosaurs (crocodile-like reptiles) lived as far north as the Canadian Arctic, and warm-temperature forests thrived near 
-                the South Pole.
-              </p>
-             <h2 id="Second_Point_Header">Climate</h2>
-            <p style="color: white;">Climate is commonly defined as the weather averaged over a long period.
-                The standard averaging period is 30 years, but other periods may be used depending on the purpose.
-                 Climate also includes statistics other than the average, such as the magnitudes of day-to-day or year-to-year variations.<br>
-                 Climate change is any systematic change in the long-term statistics of climate variables such as temperature, precipitation, 
-                 pressure, or wind sustained over several decades or longer. Climate change can be due to natural external forcings 
-                 (changes in solar emission or changes in the earth’s orbit, natural internal processes of the climate system) or it can 
-                 be human induced.
-                 </p>
-            <h2 id="Third_Point_Header">World Meteorological Organization(WMO)</h2>
-            <P style="color: white;">
-                The World Meteorological Organization (WMO) describes "climate normals" (CN) as "reference points used by climatologists
-                 to compare current climatological trends to that of the past or what is considered typical. A CN is defined as the arithmetic 
-                 average of a climate element (e.g. temperature) over a 30-year period. A 30 year period is used, 
-                as it is long enough to filter out any interannual variation or anomalies, but also short enough to be able to show longer 
-                climatic trends.<br>
-                It originated from the International Meteorological Organization (IMO), the roots of which were planted at the 1873 Vienna 
-                International Meteorological Congress. Established by the ratification of the WMO Convention on 23 March 1950, WMO became the
-                 specialised agency of the United Nations for meteorology (weather and climate), operational hydrology and related geophysical 
-                 sciences a year later. The Secretariat, headquartered in Geneva, is headed by the Secretary-General. Its  supreme body is the 
-                 World Meteorological Congress.
-            </P>
-            <h2 id="Fourth_Point_Header">Classification Of Climate</h2>
-            <P style="color: white;">
-              The Köppen climate classification is one of the most widely used climate classification systems. It was first published by 
-              German-Russian climatologist Wladimir Köppen (1846–1940) in 1884,with several later modifications by Köppen, notably in 1918 and 1936.
-              Later, the climatologist Rudolf Geiger (1894-1981) introduced some changes to the classification system, which is thus sometimes 
-              called the Köppen–Geiger climate classification system.<br>
-              The Köppen climate classification divides climates into five main climate groups, with each group being divided based on seasonal
-               precipitation and temperature patterns. The five main groups are A (tropical), B (dry), C (temperate), D (continental), and
-                E (polar). Each group and subgroup is represented by a letter. All climates are assigned a main group (the first letter). 
-                All climates except for those in the E group are assigned a seasonal precipitation subgroup (the second letter). For example, 
-                Af indicates a tropical rainforest climate. The system assigns a temperature subgroup for all groups other than those in the 
-                A group, indicated by the third letter for climates in B, C, and D, and the second letter for climates in E. For example, Cfb 
-                indicates an oceanic climate with warm summers as indicated by the ending b. Climates are classified based on specific criteria
-                 unique to each climate type
-            </P>
-            <h2 id="Fifth_Point_Header">Cyclone Amphan-West Bengal</h2>
-            <p style="color: white;">
-              This year in India, West Bengal experienced devastating floods on the account of Cyclone Amphan; northern India reeled under a 
-              cold wave and North East under heavy spells of rain; and locusts spelled doom for crops in north India. The storm in West Bengal 
-              used massive damage to standing crops, thousands of trees were uprooted, and power and water supply was interrupted in the state 
-              capital Kolkata. Many in the state have lost their entire homes as well. Cyclone Amphan made its landfall in West Bengal between 
-              Digha and Hatiya on the afternoon of May 20, as a very severe cyclonic storm with sustained wind speeds of 155-165 kilometres per
-               hour spiralling up to 185 kilometres per hour.<br>
-               The coastal state of Odisha and the neighbouring country of Bangladesh were also 
-               impacted by the cyclone. River embankments have been breached in South and North 24 Parganas districts in West Bengal, leaving 
-               several houses inundated as water through the breaches slipped into remote settlements, mostly in the Sundarbans.
-              <br>
-              And there was more — in addition to the novel coronavirus disease (COVID-19) pandemic that only made rescue and 
-              rehabilitation process challenging.
-            </p>
-            <h2 id="Sixth_Point_Header">Global Temperature</h2>
-            <p style="color: white;">
-              Scientists have high confidence that global temperatures will continue to rise for decades to come, largely due to
-               greenhouse gases produced by human activities. The Intergovernmental Panel on Climate Change (IPCC), which includes more 
-               than 1,300 scientists from the United States and other countries, forecasts a temperature rise of 2.5 to 10 degrees 
-               Fahrenheit over the next century. The lockdowns and reduced societal activity related to the COVID-19 pandemic affected 
-               emissions of pollutants in ways that slightly warmed the planet for several months last year, according to new research led
-                by the National Center for Atmospheric Research (NCAR).<br>
+          <h2 id="First_Point_Header">Average Temperature</h2>
+          <p style="color: white">
+            Earth's average temperature has risen by 1.5°F over the past
+            century, and is projected to rise another 0.5 to 8.6°F over the next
+            hundred years. Small changes in the average temperature of the
+            planet can translate to large and potentially dangerous shifts in
+            climate and weather.<br />
+            Geologists and paleontologists have found that, in the last 100
+            million years, global temperatures have peaked twice. One spike was
+            the Cretaceous Hot Greenhouse roughly 92 million years ago, about 25
+            million years before Earth’s last dinosaurs went extinct. Widespread
+            volcanic activity may have boosted atmospheric carbon dioxide.
+            Temperatures were so high that champsosaurs (crocodile-like
+            reptiles) lived as far north as the Canadian Arctic, and
+            warm-temperature forests thrived near the South Pole.
+          </p>
+          <h2 id="Second_Point_Header">Climate</h2>
+          <p style="color: white">
+            Climate is commonly defined as the weather averaged over a long
+            period. The standard averaging period is 30 years, but other periods
+            may be used depending on the purpose. Climate also includes
+            statistics other than the average, such as the magnitudes of
+            day-to-day or year-to-year variations.<br />
+            Climate change is any systematic change in the long-term statistics
+            of climate variables such as temperature, precipitation, pressure,
+            or wind sustained over several decades or longer. Climate change can
+            be due to natural external forcings (changes in solar emission or
+            changes in the earth’s orbit, natural internal processes of the
+            climate system) or it can be human induced.
+          </p>
+          <h2 id="Third_Point_Header">
+            World Meteorological Organization(WMO)
+          </h2>
+          <p style="color: white">
+            The World Meteorological Organization (WMO) describes "climate
+            normals" (CN) as "reference points used by climatologists to compare
+            current climatological trends to that of the past or what is
+            considered typical. A CN is defined as the arithmetic average of a
+            climate element (e.g. temperature) over a 30-year period. A 30 year
+            period is used, as it is long enough to filter out any interannual
+            variation or anomalies, but also short enough to be able to show
+            longer climatic trends.<br />
+            It originated from the International Meteorological Organization
+            (IMO), the roots of which were planted at the 1873 Vienna
+            International Meteorological Congress. Established by the
+            ratification of the WMO Convention on 23 March 1950, WMO became the
+            specialised agency of the United Nations for meteorology (weather
+            and climate), operational hydrology and related geophysical sciences
+            a year later. The Secretariat, headquartered in Geneva, is headed by
+            the Secretary-General. Its supreme body is the World Meteorological
+            Congress.
+          </p>
+          <h2 id="Fourth_Point_Header">Classification Of Climate</h2>
+          <p style="color: white">
+            The Köppen climate classification is one of the most widely used
+            climate classification systems. It was first published by
+            German-Russian climatologist Wladimir Köppen (1846–1940) in
+            1884,with several later modifications by Köppen, notably in 1918 and
+            1936. Later, the climatologist Rudolf Geiger (1894-1981) introduced
+            some changes to the classification system, which is thus sometimes
+            called the Köppen–Geiger climate classification system.<br />
+            The Köppen climate classification divides climates into five main
+            climate groups, with each group being divided based on seasonal
+            precipitation and temperature patterns. The five main groups are A
+            (tropical), B (dry), C (temperate), D (continental), and E (polar).
+            Each group and subgroup is represented by a letter. All climates are
+            assigned a main group (the first letter). All climates except for
+            those in the E group are assigned a seasonal precipitation subgroup
+            (the second letter). For example, Af indicates a tropical rainforest
+            climate. The system assigns a temperature subgroup for all groups
+            other than those in the A group, indicated by the third letter for
+            climates in B, C, and D, and the second letter for climates in E.
+            For example, Cfb indicates an oceanic climate with warm summers as
+            indicated by the ending b. Climates are classified based on specific
+            criteria unique to each climate type
+          </p>
+          <h2 id="Fifth_Point_Header">Cyclone Amphan-West Bengal</h2>
+          <p style="color: white">
+            This year in India, West Bengal experienced devastating floods on
+            the account of Cyclone Amphan; northern India reeled under a cold
+            wave and North East under heavy spells of rain; and locusts spelled
+            doom for crops in north India. The storm in West Bengal used massive
+            damage to standing crops, thousands of trees were uprooted, and
+            power and water supply was interrupted in the state capital Kolkata.
+            Many in the state have lost their entire homes as well. Cyclone
+            Amphan made its landfall in West Bengal between Digha and Hatiya on
+            the afternoon of May 20, as a very severe cyclonic storm with
+            sustained wind speeds of 155-165 kilometres per hour spiralling up
+            to 185 kilometres per hour.<br />
+            The coastal state of Odisha and the neighbouring country of
+            Bangladesh were also impacted by the cyclone. River embankments have
+            been breached in South and North 24 Parganas districts in West
+            Bengal, leaving several houses inundated as water through the
+            breaches slipped into remote settlements, mostly in the Sundarbans.
+            <br />
+            And there was more — in addition to the novel coronavirus disease
+            (COVID-19) pandemic that only made rescue and rehabilitation process
+            challenging.
+          </p>
+          <h2 id="Sixth_Point_Header">Global Temperature</h2>
+          <p style="color: white">
+            Scientists have high confidence that global temperatures will
+            continue to rise for decades to come, largely due to greenhouse
+            gases produced by human activities. The Intergovernmental Panel on
+            Climate Change (IPCC), which includes more than 1,300 scientists
+            from the United States and other countries, forecasts a temperature
+            rise of 2.5 to 10 degrees Fahrenheit over the next century. The
+            lockdowns and reduced societal activity related to the COVID-19
+            pandemic affected emissions of pollutants in ways that slightly
+            warmed the planet for several months last year, according to new
+            research led by the National Center for Atmospheric Research
+            (NCAR).<br />
 
-              According to the IPCC, the extent of climate change effects on individual regions will vary over time and with the ability
-               of different societal and environmental systems to mitigate or adapt to change.The new study highlights the complex and often 
-               conflicting influences of different types of emissions from power plants, motor vehicles, industrial facilities, and other 
-               sources.<br>
-            </p>
-            <h2 id="Seventh_Point_Header">Greenhouse</h2>
-            <p style="color: white;">
-              Greenhouse gases occur naturally and are essential to the survival of humans and millions of other living things, 
-              by keeping some of the sun’s warmth from reflecting back into space and making Earth livable. But after more than a century
-               and a half of industrialization, deforestation, and large scale agriculture, quantities of greenhouse gases in the atmosphere 
-               have risen to record levels not seen in three million years. As populations, economies and standards of living grow, so does 
-               the cumulative level of greenhouse gas (GHGs) emissions.There are several greenhouse gases and they are listed below:-<br>
-            <div class="a">
+            According to the IPCC, the extent of climate change effects on
+            individual regions will vary over time and with the ability of
+            different societal and environmental systems to mitigate or adapt to
+            change.The new study highlights the complex and often conflicting
+            influences of different types of emissions from power plants, motor
+            vehicles, industrial facilities, and other sources.<br />
+          </p>
+          <h2 id="Seventh_Point_Header">Greenhouse</h2>
+          <p style="color: white">
+            Greenhouse gases occur naturally and are essential to the survival
+            of humans and millions of other living things, by keeping some of
+            the sun’s warmth from reflecting back into space and making Earth
+            livable. But after more than a century and a half of
+            industrialization, deforestation, and large scale agriculture,
+            quantities of greenhouse gases in the atmosphere have risen to
+            record levels not seen in three million years. As populations,
+            economies and standards of living grow, so does the cumulative level
+            of greenhouse gas (GHGs) emissions.There are several greenhouse
+            gases and they are listed below:-<br />
+          </p>
+
+          <div class="a">
             <h3 id="Seventh_Sub_Point_1">Carbon Dioxide</h3>
-            <p style="color: white;">
-              Carbon dioxide enters the atmosphere through burning fossil fuels (coal, natural gas, and oil), solid waste, trees and other 
-              biological materials, and also as a result of certain chemical reactions (e.g., manufacture of cement). Carbon dioxide is removed 
-              from the atmosphere (or "sequestered") when it is absorbed by plants as part of the biological carbon cycle.
+            <p style="color: white">
+              Carbon dioxide enters the atmosphere through burning fossil fuels
+              (coal, natural gas, and oil), solid waste, trees and other
+              biological materials, and also as a result of certain chemical
+              reactions (e.g., manufacture of cement). Carbon dioxide is removed
+              from the atmosphere (or "sequestered") when it is absorbed by
+              plants as part of the biological carbon cycle.
             </p>
             <h3 id="Seventh_Sub_Point_2">Methane</h3>
-            <p style="color: white;">
-              Methane is emitted during the production and transport of coal, natural gas, and oil. Methane emissions also result from 
-              livestock and other agricultural practices and by the decay of organic waste in municipal solid waste landfills.
+            <p style="color: white">
+              Methane is emitted during the production and transport of coal,
+              natural gas, and oil. Methane emissions also result from livestock
+              and other agricultural practices and by the decay of organic waste
+              in municipal solid waste landfills.
             </p>
             <h3 id="Seventh_Sub_Point_3">Nitrous Oxide</h3>
-            <p style="color: white;">
-              Nitrous oxide is emitted during agricultural and industrial activities, combustion of fossil fuels and solid waste, as well as 
+            <p style="color: white">
+              Nitrous oxide is emitted during agricultural and industrial
+              activities, combustion of fossil fuels and solid waste, as well as
               during treatment of wastewater.
             </p>
             <h3 id="Seventh_Sub_Point_4">Fluorinated Gases</h3>
-            <p style="color: white;">
-              Hydrofluorocarbons, perfluorocarbons, sulfur hexafluoride, and nitrogen trifluoride are synthetic, powerful greenhouse gases 
-              that are emitted from a variety of industrial processes. Fluorinated gases are sometimes used as substitutes for stratospheric 
-              ozone-depleting substances (e.g., chlorofluorocarbons, hydrochlorofluorocarbons, and halons). These gases are typically emitted 
-              in smaller quantities, but because they are potent greenhouse gases, they are sometimes referred to as High Global Warming 
-              Potential gases ("High GWP gases").
+            <p style="color: white">
+              Hydrofluorocarbons, perfluorocarbons, sulfur hexafluoride, and
+              nitrogen trifluoride are synthetic, powerful greenhouse gases that
+              are emitted from a variety of industrial processes. Fluorinated
+              gases are sometimes used as substitutes for stratospheric
+              ozone-depleting substances (e.g., chlorofluorocarbons,
+              hydrochlorofluorocarbons, and halons). These gases are typically
+              emitted in smaller quantities, but because they are potent
+              greenhouse gases, they are sometimes referred to as High Global
+              Warming Potential gases ("High GWP gases").
             </p>
           </div>
-            </p>
-          </div>
-          <div class="card" >
-            <h2 style="color: white;">RECENT CLIMATE CHANGES</h2>
-            <h5 style="color: white;">All over the World </h5>
-            <div class="fakeimg">
-              <div id="piechart"></div>
-              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-              <script type="text/javascript">
-               
-                google.charts.load('current', {'packages':['corechart']});
-                google.charts.setOnLoadCallback(drawChart);
-                function drawChart() {
-                  var data = google.visualization.arrayToDataTable([
-                  ['Task', 'percentage it affects'],
-                  ['Agriculture', 15],
-                  ['Electricity', 13],
-                  ['Transportation', 14],
-                  ['Industrial', 29],
-                  ['Residential & Commercial', 11],
-                  ['other sources', 7]
+        </div>
+        <div class="card">
+          <h2 style="color: white">RECENT CLIMATE CHANGES</h2>
+          <h5 style="color: white">All over the World</h5>
+          <div class="fakeimg">
+            <div id="piechart"></div>
+            <script
+              type="text/javascript"
+              src="https://www.gstatic.com/charts/loader.js"
+            ></script>
+            <script type="text/javascript">
+              google.charts.load("current", { packages: ["corechart"] });
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                  ["Task", "percentage it affects"],
+                  ["Agriculture", 15],
+                  ["Electricity", 13],
+                  ["Transportation", 14],
+                  ["Industrial", 29],
+                  ["Residential & Commercial", 11],
+                  ["other sources", 7],
                 ]);
-                var options = {'title':'Affects on climate due to different sources ', 'width':900, 'height':400};
-                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                var options = {
+                  title: "Affects on climate due to different sources ",
+                  width: 900,
+                  height: 400,
+                };
+                var chart = new google.visualization.PieChart(
+                  document.getElementById("piechart")
+                );
                 chart.draw(data, options);
               }
-              </script>
-
-            </div>
-            <p style="color: white;">By the graph it is shown that all the effects that take place on climate
-              by different scources.<br>
-              As you can see Industrial contribute 32.6 % in the process of climate change.Which is one of the biggest factor in changing the 
-              climate.<br><br><br>
-
-            </p>
-             <div class="fakeimg">
-              <div class="row">
-                <div class="column">
-                  <img src="bad.jpg" alt="burn the world" style="width:100%" height="200px">
-                </div>
-                <div class="column">
-                  <img src="effect.jpg" alt="Forest" style="width:100%" height="200px">
-                </div>
-                <div class="column">
-                  <img src="greenhouse.jpg" alt="Mountains" style="width:100%" height="200px">
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <img src="1.jpg" alt="burn the world" style="width:100%" height="200px">
-                </div>
-                <div class="column">
-                  <img src="2.jpg" alt="Forest" style="width:100%" height="200px">
-                </div>
-                <div class="column">
-                  <img src="4.png" alt="Mountains" style="width:100%" height="200px">
-                </div>
-              </div>
-              
-            </div>
-            <p style="color: white;"></p>
-          </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2 style="color: white;">About Us</h2>
-            <div class="fakeimg">
-            <p style="color: white;">
-              YASH AGARWAL<br>
-              <img src="yash.jpeg" alt="photo of yash agarwal" style="width: 200px;" height="200px"><br>
-            </div>
-            <div class="fakeimg" style="color: white;">
-              PARMAR HARSH<br>
-              <img src="harsh.jpeg" alt="photo of parmar harsh" style="width: auto;" height="200px"><br>
-            </div>
-              <div class="fakeimg" style="color: white;">
-              SRISTI AGARWAL<br>
-              <img src="sristi.jpeg" alt="photo of sristi agarwal" style="width: auto;" height="200px"><br>
-              </div>
-              <div class="fakeimg" style="color: white;">
-              RITAV DAS<br>
-              <img src="ritav.jpeg" alt="photo of ritav das" style="width: auto;" height="200px"><br>
-            </div>
-            </p>
-          </div>
-          <div class="card">
-            <h3 style="color: white;">Popular Post</h3>
-            <div class="fakeimg" style="color: white;">
-             <a href="https://www.bbc.com/news/science-environment-55498657"><img src="pond.jpg" alt="world is on fire" style="width: 100%;"></a> 
-            </div><br>
-            <div class="fakeimg" style="color: white;">
-             <a href="https://www.geospatialworld.net/blogs/managing-the-business-risk-of-climate-change/"><img src="earth.jpg" alt="save me from Humans" style="width: 100%;">
-             </a>
-            </div><br>
-            <div class="fakeimg" style="color: white;">
-             <a href="https://eponline.com/articles/2020/08/03/the-coronavirus-is-making-it-easier-to-talk-about-climate-change-heres-how.aspx"> <img src="mask.jpg" alt="balance in the world" style="width: 100%;">
-             </a>
-            </div>
-          </div>
-          <div class="card">
-            <h3 style="color: white;">Urgent information</h3>
-            <p>
-              <div class="fakeimg" style="color: white;">
-              <a href="https://www.washingtonpost.com/local/climate-change-protesters-plan-to-block-downtown-dc-streets-friday-morning/2019/12/05/1d4c1a04-17a7-11ea-9110-3b34ce1d92b1_story.html"><img src="end.png" alt="end is coming stop the pollution" style="width: 100%;"></a><br><br><br>
-              <a href="https://billmoyers.com/story/tweet-for-climate-truth/"><img src="end1.jpg" alt="stop humans from making the biggest mistake of their life" style="width: 100%;"></a><br><br><br>
-              <a href="https://www.dnaindia.com/science/report-from-us-wildfires-to-torrential-rains-in-africa-a-reminder-of-urgent-action-on-climate-change-2842208"><img src="99.jpg" alt="earth is dying" style="width: 100%;"></a><br><br><br>
-              <a href="https://www.challenge2025.eu/urgent-environmental-changes-are-required-to-support-climate-change/"><img src="100.jpg" alt="we need to change so we can have a tommorow" style="width: 100%;"></a><br><br><br>
-              <a href="https://www.healthcareitnews.com/news/emea/healthcare-experts-call-action-climate-change-and-inequality"><img src="101.png" alt="Healthcare experts done research on climate change" style="width: 100%;"></a><br><br><br>
-              </div>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <!--<div class="footer">
-        <h2>Footer</h2>
-      </div>-->
-      <footer class="footer-distributed">
-        <div class="footer-left">
-          <h3>Connect2<span>Climate</span></h3>
-  
-          <p class="footer-links">
-            <a href="#">Home</a>
-            |
-            <a href="#">Blog</a>
-            |
-            <a href="#">About</a>
-            |
-            <a href="#">Contact</a>
-          </p>
-  
-          <p class="footer-company-name">© 2021 Connect2Climate Pvt. Ltd.</p>
-        </div>
-  
-        <div class="footer-center">
-          <div>
-            <i class="fa fa-map-marker"></i>
-            <p>
-              <span>309 - Rupa Solitaire, Bldg. No. A - 1, Sector - 1</span>
-              Mahape, Navi Mumbai - 400710
-            </p>
-          </div>
-  
-          <div>
-            <i class="fa fa-phone"></i>
-            <p>+91 22-27782183</p>
-          </div>
-          <div>
-            <i class="fa fa-envelope"></i>
-            <p>
-              <a href="mailto:support@connect2climate.com"
-                >support@connect2climate.com</a
+            </script>
+            <p style="color: white">
+              Copyright <span>&#169;</span> 2018
+              <a
+                href="https://globalecoguy.org/the-three-most-important-graphs-in-climate-change-e64d3f4ed76"
+                >Environmental Protection Agency (EPA)</a
               >
             </p>
           </div>
-        </div>
-        <div class="footer-right">
-          <p class="footer-company-about">
-            <span>About the company</span>
-            To help solve the climate crisis by organizing local business leaders
-            to be more effective advocates for climate action within their
-            businesses and communities, as well as at the state, national, and
-            even international levels.
+          <p style="color: white">
+            By the graph it is shown that all the effects that take place on
+            climate by different scources.<br />
+            As you can see Industrial contribute 32.6 % in the process of
+            climate change.Which is one of the biggest factor in changing the
+            climate.<br /><br /><br />
           </p>
-          <div class="footer-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-youtube"></i></a>
+          <div class="fakeimg">
+            <div class="row">
+              <div class="column">
+                <img
+                  src="bad.jpg"
+                  alt="burn the world"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="effect.jpg"
+                  alt="Forest"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="greenhouse.jpg"
+                  alt="Mountains"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img
+                  src="1.jpg"
+                  alt="burn the world"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="2.jpg"
+                  alt="Forest"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+              <div class="column">
+                <img
+                  src="4.png"
+                  alt="Mountains"
+                  style="width: 100%"
+                  height="200px"
+                />
+              </div>
+            </div>
+          </div>
+          <p style="color: white"></p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2 style="color: white">About Us</h2>
+          <div class="fakeimg">
+            <p style="color: white">
+              YASH AGARWAL<br />
+              <img
+                src="yash.jpeg"
+                alt="photo of yash agarwal"
+                style="width: 200px"
+                height="200px"
+              /><br />
+            </p>
+          </div>
+
+          <div class="fakeimg" style="color: white">
+            PARMAR HARSH<br />
+            <img
+              src="harsh.jpeg"
+              alt="photo of parmar harsh"
+              style="width: auto"
+              height="200px"
+            /><br />
+          </div>
+          <div class="fakeimg" style="color: white">
+            SRISTI AGARWAL<br />
+            <img
+              src="sristi.jpeg"
+              alt="photo of sristi agarwal"
+              style="width: auto"
+              height="200px"
+            /><br />
+          </div>
+          <div class="fakeimg" style="color: white">
+            RITAV DAS<br />
+            <img
+              src="ritav.jpeg"
+              alt="photo of ritav das"
+              style="width: auto"
+              height="200px"
+            /><br />
           </div>
         </div>
-      </footer>
-</body>
+        <div class="card">
+          <h3 style="color: white">Popular Post</h3>
+          <div class="fakeimg" style="color: white">
+            <a href="https://www.bbc.com/news/science-environment-55498657"
+              ><img src="pond.jpg" alt="world is on fire" style="width: 100%"
+            /></a>
+          </div>
+          <br />
+          <div class="fakeimg" style="color: white">
+            <a
+              href="https://www.geospatialworld.net/blogs/managing-the-business-risk-of-climate-change/"
+              ><img
+                src="earth.jpg"
+                alt="save me from Humans"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+          <br />
+          <div class="fakeimg" style="color: white">
+            <a
+              href="https://eponline.com/articles/2020/08/03/the-coronavirus-is-making-it-easier-to-talk-about-climate-change-heres-how.aspx"
+            >
+              <img
+                src="mask.jpg"
+                alt="balance in the world"
+                style="width: 100%"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 style="color: white">Urgent information</h3>
+          <p></p>
+          <div class="fakeimg" style="color: white">
+            <a
+              href="https://www.washingtonpost.com/local/climate-change-protesters-plan-to-block-downtown-dc-streets-friday-morning/2019/12/05/1d4c1a04-17a7-11ea-9110-3b34ce1d92b1_story.html"
+              ><img
+                src="end.png"
+                alt="end is coming stop the pollution"
+                style="width: 100%" /></a
+            ><br /><br /><br />
+            <a href="https://billmoyers.com/story/tweet-for-climate-truth/"
+              ><img
+                src="end1.jpg"
+                alt="stop humans from making the biggest mistake of their life"
+                style="width: 100%" /></a
+            ><br /><br /><br />
+            <a
+              href="https://www.dnaindia.com/science/report-from-us-wildfires-to-torrential-rains-in-africa-a-reminder-of-urgent-action-on-climate-change-2842208"
+              ><img src="99.jpg" alt="earth is dying" style="width: 100%" /></a
+            ><br /><br /><br />
+            <a
+              href="https://www.challenge2025.eu/urgent-environmental-changes-are-required-to-support-climate-change/"
+              ><img
+                src="100.jpg"
+                alt="we need to change so we can have a tommorow"
+                style="width: 100%" /></a
+            ><br /><br /><br />
+            <a
+              href="https://www.healthcareitnews.com/news/emea/healthcare-experts-call-action-climate-change-and-inequality"
+              ><img
+                src="101.png"
+                alt="Healthcare experts done research on climate change"
+                style="width: 100%" /></a
+            ><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div class="footer">
+        <h2>Footer</h2>
+      </div>-->
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Connect2<span>Climate</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">Blog</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">© 2021 Connect2Climate Pvt. Ltd.</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>309 - Rupa Solitaire, Bldg. No. A - 1, Sector - 1</span>
+            Mahape, Navi Mumbai - 400710
+          </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 22-27782183</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@connect2climate.com"
+              >support@connect2climate.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about" style="font-size: 17px">
+          <span>About the company</span>
+          To help solve the climate crisis by organizing local business leaders
+          to be more effective advocates for climate action within their
+          businesses and communities, as well as at the state, national, and
+          even international levels.
+        </p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
