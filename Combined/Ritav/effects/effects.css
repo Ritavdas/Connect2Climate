@@ -41,6 +41,10 @@ body {
   /* color: white; */
 }
 
+p {
+  text-align: justify;
+}
+
 .para {
   font-size: 20px;
 }
